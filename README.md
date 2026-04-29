@@ -49,16 +49,6 @@ The project includes:
 
 ---
 
-##  Repository Structure
-
-```text
-datasets/        -> Raw CSV source files  
-docs/            -> Architecture diagrams & data catalog  
-scripts/         -> SQL scripts for Bronze / Silver / Gold layers  
-tests/           -> Validation and testing scripts
-
----
-
 ## Credits
 
 This project was recreated as a personal learning exercise based on the tutorial and repository by Baraa Khatib Salkini.
@@ -67,3 +57,16 @@ Original source:
 https://github.com/DataWithBaraa/sql-data-warehouse-project
 
 This repository contains my own implementation completed while following the tutorial.
+
+##  Repository Structure
+
+```text
+datasets/        -> Raw CSV source files  
+docs/            -> Architecture diagrams & data catalog  
+scripts/         -> SQL scripts for Bronze / Silver / Gold layers  
+tests/           -> Validation and testing scripts
+
+
+
+
+
