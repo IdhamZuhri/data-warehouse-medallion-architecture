@@ -4,8 +4,6 @@ This project demonstrates the design and implementation of a complete **data eng
 
 It follows a modern **Medallion Architecture (Bronze → Silver → Gold)** using **SQL Server**, and delivers insights through an interactive **Power BI dashboard**.
 
-![Data Pipeline Architecture](docs/Medallion_architecture.png)
-
 ---
 
 ##  Project Objective
@@ -15,6 +13,8 @@ To build a scalable data pipeline that transforms raw operational data into **bu
 ---
 
 ##  Architecture Overview
+
+![Data Pipeline Architecture](docs/Medallion_architecture.png)
 
 * **Bronze Layer** → Raw ingestion from CRM & ERP sources (CSV)
 * **Silver Layer** → Data cleaning, standardization, and transformation
@@ -46,7 +46,7 @@ CRM / ERP → Bronze → Silver → Gold → Power BI Dashboard
 
 ##  Data Modeling
 
-![Data Model](docs/data_flow.png)
+![Data Flow](docs/data_model.png)
 
 * Fact Table: `gold.fact_sales`
 * Dimension Tables:
