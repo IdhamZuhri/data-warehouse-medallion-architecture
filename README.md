@@ -1,72 +1,94 @@
-#  Data Warehouse & Analytics Practice Project
+#  End-to-End Sales Data Pipeline & Analytics Dashboard
 
-Welcome to this repository. This project documents my hands-on learning journey in building a **Data Warehouse and Analytics solution** using SQL Server, based on a guided YouTube tutorial and expanded with my own practice, setup, and implementation.
+This project demonstrates the design and implementation of a complete **data engineering and analytics workflow**, from raw data ingestion to business intelligence reporting.
 
-The purpose of this project is to strengthen practical skills in:
-
-- Data Warehousing
-- ETL Development
-- SQL Querying
-- Data Modeling
-- Analytics Reporting
-- Git Version Control
+It follows a modern **Medallion Architecture (Bronze → Silver → Gold)** using **SQL Server**, and delivers insights through an interactive **Power BI dashboard**.
 
 ---
 
-##  About This Project
+##  Project Objective
 
-I followed a full tutorial project and recreated the entire workflow step-by-step in my own environment, while managing the files, scripts, and progress inside this repository.
-
-Rather than simply copying code, this repo serves as my personal implementation and learning reference to understand how a modern data warehouse is designed and developed.
+To build a scalable data pipeline that transforms raw operational data into **business-ready insights** for decision-making.
 
 ---
 
-##  Data Architecture
+##  Architecture Overview
 
-This project uses a **Medallion Architecture** approach with three layers:
-
-### 🥉 Bronze Layer
-Stores raw source data imported from CSV files into SQL Server.
-
-### 🥈 Silver Layer
-Handles cleaning, standardization, transformation, and quality improvements.
-
-### 🥇 Gold Layer
-Contains business-ready tables optimized for reporting and analytics using dimensional/star schema design.
+* **Bronze Layer** → Raw ingestion from CRM & ERP sources (CSV)
+* **Silver Layer** → Data cleaning, standardization, and transformation
+* **Gold Layer** → Star schema modeling (Fact & Dimension tables)
 
 ---
 
-##  Project Scope
+##  Data Pipeline Flow
 
-The project includes:
-
-- Importing raw data from multiple source systems
-- Building ETL pipelines using SQL scripts
-- Cleaning and transforming data
-- Designing fact and dimension tables
-- Running business analysis queries
-- Generating insights from customer, product, and sales data
+```text
+CRM / ERP → Bronze → Silver → Gold → Power BI Dashboard
+```
 
 ---
 
-## Credits
+##  Dashboard Preview
 
-This project was recreated as a personal learning exercise based on the tutorial and repository by Baraa Khatib Salkini.
+> Key metrics: Sales, Orders, Customers, Cost, Profit
 
-Original source:
-https://github.com/DataWithBaraa/sql-data-warehouse-project
+* Sales trends over time
+* Top-performing products
+* Customer segmentation
+* Country-level sales distribution
+* Profitability insights
 
-This repository contains my own implementation completed while following the tutorial.
+---
+
+##  Data Modeling
+
+* Fact Table: `gold.fact_sales`
+* Dimension Tables:
+
+  * `gold.dim_customers`
+  * `gold.dim_products`
+
+Schema follows **star schema design** for analytical performance.
+
+---
+
+##  Technologies Used
+
+* **SQL Server** (Data Warehouse)
+* **T-SQL** (ETL & Transformations)
+* **Power BI** (Dashboard & Visualization)
+* **GitHub** (Version Control)
+
+---
 
 ##  Repository Structure
 
 ```text
-datasets/        -> Raw CSV source files  
-docs/            -> Architecture diagrams & data catalog  
-scripts/         -> SQL scripts for Bronze / Silver / Gold layers  
-tests/           -> Validation and testing scripts
+datasets/        Raw source data (CSV)
+docs/            Architecture diagrams & models
+scripts/         SQL scripts (Bronze / Silver / Gold)
+powerbi/         Power BI dashboard (.pbix)
+tests/           Data validation scripts
+```
 
+---
 
+##  Key Highlights
 
+* Built a full **ETL pipeline using SQL**
+* Designed **star schema for analytics**
+* Created **business KPIs (Sales, Cost, Profit)**
+* Integrated **Power BI dashboard with Gold layer**
+* Applied **data modeling best practices**
 
+---
 
+##  Note
+
+This project is inspired by a tutorial, but implemented independently with custom improvements, structure, and enhancements.
+
+---
+
+##  Author
+
+Idham Zuhri
