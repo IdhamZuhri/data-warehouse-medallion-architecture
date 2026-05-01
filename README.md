@@ -32,6 +32,8 @@ CRM / ERP → Bronze → Silver → Gold → Power BI Dashboard
 
 ##  Dashboard Preview
 
+![Dashboard](powerbi/dashboard_preview.png)
+
 > Key metrics: Sales, Orders, Customers, Cost, Profit
 
 * Sales trends over time
@@ -43,6 +45,8 @@ CRM / ERP → Bronze → Silver → Gold → Power BI Dashboard
 ---
 
 ##  Data Modeling
+
+![Data Model](docs/data_flow.png)
 
 * Fact Table: `gold.fact_sales`
 * Dimension Tables:
