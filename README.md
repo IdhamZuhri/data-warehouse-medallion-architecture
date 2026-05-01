@@ -14,7 +14,7 @@ To build a scalable data pipeline that transforms raw operational data into **bu
 
 ##  Architecture Overview
 
-![Data Pipeline Architecture](docs/Medallion_architecture.png)
+![Data Pipeline Architecture](docs/pipeline_architecture.png)
 
 * **Bronze Layer** → Raw ingestion from CRM & ERP sources (CSV)
 * **Silver Layer** → Data cleaning, standardization, and transformation
